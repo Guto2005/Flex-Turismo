@@ -1,5 +1,12 @@
-header{
-    display: flex;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    }
+
+    ul li a {
+    text-decoration: none;
+    color: #fff
 }
 
 ul{
@@ -10,16 +17,53 @@ ul{
     display: flex;
     max-width: 992px;
     min-width: 320px;
-    justify-content: center;
-    margin: auto;
+    justify-content: space-between;
+    margin:0 auto;
+    flex-direction: none;
+    height: 100%;
+    align-items: center;
+
 }
 
-*{
-    
-    padding: 0;
-    font-family: sans-serif;
-    }
+header {
+     width: 100%;
+     background-color: #132f5c;
+     height: 100px;
+     align-items: center;
+     color: #fff;
+}
+.list-item {
+    display: flex;
+    width: 260px;
+    justify-content: space-between;
+    align-items: center;
+}
+.apresentacao {
+    /*vh unidade de medida equivalente a altura do viewport ou seja, se o viewport for 1000px, 60vh irá representar 60% dos 1000px ou seja, 600px*/
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    ul li a {
-    text-decoration: none;
+.apresentacao .txt-apresentacao{
+    height: 200px;
+}
+
+.txt-apresentacao h2{
+    color: #122a57;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.btn{
+    width: 220px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    /*transforma um elemento inline em elemento de bloco*/
+    display: inline-block;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 50px;
 }
